@@ -1,0 +1,118 @@
+{
+	"info": {
+		"_postman_id": "ce5dd6e1-44e6-4a46-9b49-135e447d0aca",
+		"name": "Vue",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "31403190"
+	},
+	"item": [
+		{
+			"name": "Department",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:49146/api/department"
+			},
+			"response": []
+		},
+		{
+			"name": "Employee",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:49146/api/employee"
+			},
+			"response": []
+		},
+		{
+			"name": "AddDepartment",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"DepartmentId\":\"3\",\r\n    \"DepartmentName\":\"Finance\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:49146/api/department"
+			},
+			"response": []
+		},
+		{
+			"name": "AddEmployee",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"EmployeeId\": 2,\r\n        \"EmployeeName\": \"user\",\r\n        \"Department\": \"IT\",\r\n        \"DateOfJoining\": \"2024-01-06\",\r\n        \"PhotoFileName\": \"anonymous.png\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:49146/api/employee"
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteDepartment",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:49146/api/employee/3"
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteEmployee",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:49146/api/employee/2"
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateDepartment",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"DepartmentId\":\"3\",\r\n    \"DepartmentName\":\"Human Resource\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:49146/api/department/2"
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateEmployee",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"EmployeeId\": 2,\r\n        \"EmployeeName\": \"user\",\r\n        \"Department\": \"Finance\",\r\n        \"DateOfJoining\": \"2024-01-06\",\r\n        \"PhotoFileName\": \"anonymous.png\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:49146/api/employee/2"
+			},
+			"response": []
+		}
+	]
+}

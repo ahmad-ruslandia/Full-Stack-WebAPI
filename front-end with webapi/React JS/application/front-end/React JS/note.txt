@@ -1,0 +1,16 @@
+#install node 12.22.0 => 14.17.0
+nvm install 12.22.0
+or
+nvm install 13.13.0
+or
+nvm install 14.17.0
+
+#using node 12.22.0 => 14.17.0
+nvm use 12.22.0
+or
+nvm use 13.13.0
+or
+nvm use 14.17.0
+
+#install node modules
+npm install
